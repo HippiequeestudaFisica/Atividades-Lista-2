@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atividade_9_Lista_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string sexo;
+            int x, y, z;
+            Console.WriteLine("Digite seu sexo [M]asculino ou [F]eminino:");
+            sexo = Console.ReadLine();
+            Console.WriteLine("Digite o seu Peso:");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a sua Altura:");
+            z = int.Parse(Console.ReadLine());
+            x = y / (z * z);
+            if((sexo == "F") && (x < 19))
+            {
+                Console.WriteLine("Abaixo do Peso:");
+                Console.WriteLine(x);
+                Console.WriteLine("N/m^2");
+            }
+            if ((sexo == "F") && (19 <= x < 24))
+            {
+                Console.WriteLine("Peso Ideal:");
+                Console.WriteLine(x);
+                Console.WriteLine("N/m^2");
+            }
+            if ((sexo == "F") && (x >= 24))
+            {
+                Console.WriteLine("Acima do Peso:");
+                Console.WriteLine(x);
+                Console.WriteLine("N/m^2");
+            }
+            if ((sexo == "M") && (x < 20))
+            {
+                Console.WriteLine("Abaixo do Peso:");
+                Console.WriteLine(x);
+                Console.WriteLine("N/m^2");
+            }
+            if ((sexo == "M")&&(20<=x<25))
+            {
+                Console.WriteLine("Peso Ideal:");
+                Console.WriteLine(x);
+                Console.WriteLine("N/m^2");
+            }
+            if ((sexo == "M")&&(x >= 25))
+            {
+                Console.WriteLine("Acima do Peso:");
+                Console.WriteLine(x);
+                Console.WriteLine("N/m^2");
+            }
+        }
+    }
+}
