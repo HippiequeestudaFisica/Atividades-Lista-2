@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atividade_2_Lista_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y;
+
+            Console.WriteLine("Digite o Primeiro Número");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o Segundo Número");
+
+            x = int.Parse(Console.ReadLine());
+            if (x > y)
+            {
+                Console.WriteLine("O número maior é:");
+                Console.Write(x);
+            }
+            if (x < y)
+            {
+                Console.WriteLine("O número maior é:");
+                Console.Write(y);
+            }
+            if (x = y)
+            {
+                Console.WriteLine("O número equivalente é:");
+                Console.Write(y);
+                Console.WriteLine("=");
+                Console.Write(x);
+            }
+
+        }
+    }
+}
