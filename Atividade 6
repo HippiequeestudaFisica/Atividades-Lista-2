@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atividade_6_Lista_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, z;
+            Console.WriteLine("Digite o Peso:");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a Altura:");
+            x = int.Parse(Console.ReadLine());
+            z = x/(y*y);
+            if (z < 20)
+            {
+                Console.WriteLine("Abaixo do Peso:");
+                Console.Write(z)
+                Console.Write("N/m^2");
+
+            }
+            if (20 <= z < 25)
+            {
+                Console.WriteLine("Peso ideal:");
+                Console.Write(z)
+                Console.Write("N/m^2");
+            }
+            if (z >= 25)
+            {
+                Console.WriteLine("Acima do Peso:");
+                Console.Write(z)
+                Console.Write("N/m^2");
+
+            }
+        }
+    }
+}
