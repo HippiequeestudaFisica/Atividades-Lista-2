@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atividade_3_Lista_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, z;
+            Console.WriteLine("Digite o Primeiro Número");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o Segundo Número");
+            x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o Terceiro Número");
+            z = int.Parse(Console.ReadLine());
+            if (x > y > z)
+            {
+                Console.WriteLine("O número maior é:");
+                Console.Write(x);
+            }
+            if (x > z > y)
+            {
+                Console.WriteLine("O número maior é:");
+                Console.Write(x);
+            }
+            if (z > x > y)
+            {
+                Console.WriteLine("O número maior é:");
+                Console.Write(z);
+            }
+            if (z > y > x)
+            {
+                Console.WriteLine("O número maior é:");
+                Console.Write(z);
+            }
+            if (y > x > z)
+            {
+                Console.WriteLine("O número maior é:");
+                Console.Write(y);
+            }
+            if (y > z > x)
+            {
+                Console.WriteLine("O número maior é:");
+                Console.Write(y);
+            }
+        }
+    }
+}
