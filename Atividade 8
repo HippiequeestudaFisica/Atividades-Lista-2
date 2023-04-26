@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atividade_7_Lista_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, z;
+            Console.WriteLine("Digite a Hipotenusa");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o Cateto Oposto");
+            x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o Cateto Adjacente");
+            z = int.Parse(Console.ReadLine());
+            if (x!=z)
+            {
+                Console.WriteLine("Temos um triângulo retângulo.");
+            }
+            if (x = z )
+            {
+                Console.WriteLine("Temos um triângulo quadrado.");
+            }
+
+        }
+    }
+}
